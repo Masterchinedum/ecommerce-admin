@@ -1,8 +1,10 @@
+import { UserButton } from "@clerk/nextjs";
+
 
 const SetupPage = () => {
   return (
-    <div>
-      This is a Private and protected section 
+    <div className= "p-4">
+      <UserButton afterSignOutUrl="/"/>
     </div>
   )
 }

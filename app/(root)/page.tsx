@@ -1,7 +1,10 @@
+import { Button } from '@/components/ui/button'
 import image from 'next/image'
 
 export default function Home() {
   return (
-    <p> Hello World</p>
+    <div>
+      <Button> Check</Button>
+    </div>
   )
 }

@@ -1,10 +1,10 @@
-import { Button } from '@/components/ui/button'
-import image from 'next/image'
 
-export default function Home() {
+const SetupPage = () => {
   return (
     <div>
-      <Button> Check</Button>
+      This is a Private and protected section 
     </div>
   )
 }
+
+export default SetupPage;

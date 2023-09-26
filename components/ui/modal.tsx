@@ -14,7 +14,7 @@ interface ModalProps {
     description: string;
     isOpen: boolean;
     onClose: () => void;
-    children: React.ReactNode; 
+    children?: React.ReactNode; 
 };
 
 export const Modal: React.FC<ModalProps> = ({

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { 
     Check, 
     ChevronsUpDown, 
@@ -52,7 +53,7 @@ export default function StoreSwitcher ({
         value: item.id
     })); 
 
-    const currentStore = formattedItems.find((item) => item.value === params.storeid);
+    const currentStore = formattedItems.find((item) => item.value === params.storeId);
 
     const [open, setOpen] = useState(false);
 
@@ -70,7 +71,8 @@ export default function StoreSwitcher ({
                 role="combobox"
                 aria-expanded= {open}
                 aria-label="Select a store"
-                className={cn("w-[200px] justify-between", className)}>
+                className={cn("w-[200px] justify-between", className)}
+                >
                     <StoreIcon className = "mr-2 h-4 w-4"/>
                     {currentStore?.label}
                     <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50"/>
@@ -93,8 +95,8 @@ export default function StoreSwitcher ({
                                     className= {cn (
                                         "ml-auto h-4 w-4",
                                         currentStore?.value === store.value
-                                        ? "opacity-100"
-                                        : "opacity-0"
+                                            ? "opacity-100"
+                                            : "opacity-0"
                                     )}
                                     />
                                 </CommandItem>

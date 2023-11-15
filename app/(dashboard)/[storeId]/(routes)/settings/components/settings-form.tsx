@@ -1,6 +1,7 @@
 "use client";
 
 import { Store } from "@prisma/client";
+import { Heading } from "@/components/ui/heading";
 
 interface SettingsFormProps {
     initialData: Store;

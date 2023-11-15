@@ -2,6 +2,8 @@ import prismadb from "@/lib/prismadb";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
+import { SettingsForm } from "./components/settings-form";
+
 interface SettingsPageProps {
     params: {
         storeId: string;

@@ -9,8 +9,8 @@ export const Heading: React.FC<HeadingProps> = ({
 }) => {
     return (
         <div className="flex flex-col">
-            <h1 className="text-3xl font-bold text-gray-900">{title}</h1>
-            <p className="text-sm text-gray-500">{description}</p>
+            <h1 className="text-3xl font-bold tracking-tight">{title}</h1>
+            <p className="text-sm text-muted-foreground">{description}</p>
         </div>
     );
 }

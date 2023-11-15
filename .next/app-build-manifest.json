@@ -11,20 +11,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/[storeId]/layout.js"
     ],
-    "/(dashboard)/[storeId]/(routes)/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/[storeId]/(routes)/page.js"
-    ],
     "/(dashboard)/[storeId]/(routes)/settings/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/[storeId]/(routes)/settings/page.js"
     ],
-    "/not-found": [
+    "/(dashboard)/[storeId]/(routes)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/not-found.js"
+      "static/chunks/app/(dashboard)/[storeId]/(routes)/page.js"
     ]
   }
 }

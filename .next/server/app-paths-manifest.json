@@ -1,3 +1,6 @@
 {
-  "/(dashboard)/[storeId]/(routes)/page": "app/(dashboard)/[storeId]/(routes)/page.js"
+  "/not-found": "app/not-found.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(dashboard)/[storeId]/(routes)/page": "app/(dashboard)/[storeId]/(routes)/page.js",
+  "/(auth)/(routes)/sign-in/[[...sign-in]]/page": "app/(auth)/(routes)/sign-in/[[...sign-in]]/page.js"
 }

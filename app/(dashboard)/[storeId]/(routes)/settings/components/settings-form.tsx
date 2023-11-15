@@ -15,7 +15,8 @@ import {
     FormControl, 
     FormField, 
     FormItem, 
-    FormLabel 
+    FormLabel, 
+    FormMessage
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 
@@ -50,8 +51,9 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
                 <Heading 
                     title="settings"
                     description= "Manage store Preferences"
-            />
+                />
                 <Button
+                    disabled={loading}
                     variant="destructive"
                     size="sm"
                     onClick={() => {}}
@@ -74,6 +76,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
                                 <FormControl>
                                     <Input disabled={loading} placeholder="Store name" {...field} />
                                 </FormControl>
+                                <FormMessage />
                             </FormItem>
                         )}
                         />

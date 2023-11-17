@@ -23,6 +23,7 @@ import {
     FormMessage
 } from "@/components/ui/form";
 import { useParams, useRouter } from "next/navigation";
+import { AlertModal } from "@/components/modals/alert-modals";
 
 
 
@@ -63,8 +64,23 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
         }
     };
 
+    const onDelete = async () => {
+        try{
+
+        }catch (error) {
+            toast.error("Commot all the market and categogies wey you put fess.");
+        }
+    }
+
     return (
         <>
+            <AlertModal 
+            isOpen={open}
+            onClose={() => setOpen(false)}
+            onConfirm={() => {}}
+            loading={loading}
+            
+            />
             <div className="flex items-center justify-between"> 
                 <Heading 
                     title="settings"

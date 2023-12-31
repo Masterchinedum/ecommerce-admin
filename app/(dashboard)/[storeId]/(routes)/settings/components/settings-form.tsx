@@ -71,10 +71,9 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
             router.refresh();
             router.push("/")
             toast.success("Store deleted");
-
-        }catch (error) {
+        }   catch (error) {
             toast.error("Commot all the market and categogies wey you put fess.");
-        } finally {
+        }   finally {
             setLoading(false)
             setOpen(false)
         }
@@ -85,7 +84,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
             <AlertModal 
             isOpen={open}
             onClose={() => setOpen(false)}
-            onConfirm={() => {}}
+            onConfirm={onDelete}
             loading={loading}
             
             />

@@ -2,5 +2,6 @@
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/(auth)/(routes)/sign-in/[[...sign-in]]/page": "app/(auth)/(routes)/sign-in/[[...sign-in]]/page.js",
   "/(root)/(routes)/page": "app/(root)/(routes)/page.js",
-  "/(dashboard)/[storeId]/(routes)/page": "app/(dashboard)/[storeId]/(routes)/page.js"
+  "/(dashboard)/[storeId]/(routes)/page": "app/(dashboard)/[storeId]/(routes)/page.js",
+  "/(dashboard)/[storeId]/(routes)/settings/page": "app/(dashboard)/[storeId]/(routes)/settings/page.js"
 }

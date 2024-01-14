@@ -42,6 +42,7 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
 }) => {
     const params = useParams();
     const router = useRouter();
+    // const origin = useOrigin();
 
     const [open, setOpen] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -71,11 +72,9 @@ export const SettingsForm: React.FC<SettingsFormProps> = ({
             router.refresh();
             router.push("/")
             toast.success("Store deleted");
-        }   
-        // catch (error) {
-        //     toast.error("Commot all the market and categogies wey you put fess.");
-        // }   
-        finally {
+        }   catch (error) {
+            toast.error("Commot all the market and categogies wey you put fess.");
+        }   finally {
             setLoading(false)
             setOpen(false)
         }

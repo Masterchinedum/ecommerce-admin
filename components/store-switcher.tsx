@@ -5,12 +5,11 @@ import { useParams, useRouter } from "next/navigation";
 import { Check, ChevronsUpDown, PlusCircle, Store as StoreIcon } from "lucide-react";
 
 
-import { Popover, PopoverTrigger } from "@/components/ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { useStoreModal } from "@/hooks/use-store-modal";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { PopoverContent } from "@radix-ui/react-popover";
 import { 
     Command, 
     CommandEmpty, 
